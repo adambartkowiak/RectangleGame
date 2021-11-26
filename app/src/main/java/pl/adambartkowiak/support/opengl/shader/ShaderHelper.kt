@@ -1,4 +1,4 @@
-package pl.adambartkowiak.support.opengl
+package pl.adambartkowiak.support.opengl.shader
 
 import android.opengl.GLES20
 import android.util.Log

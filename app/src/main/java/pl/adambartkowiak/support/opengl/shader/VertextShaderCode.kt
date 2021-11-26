@@ -1,7 +1,7 @@
 package pl.adambartkowiak.support.opengl
 
 
-object GLTFVertextShader {
+object GLTFVertexShader {
     const val code =
         """ 
             precision mediump float;

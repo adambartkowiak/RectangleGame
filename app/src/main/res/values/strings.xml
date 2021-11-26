@@ -1,15 +1,16 @@
 <resources>
     <string name="app_name">RectangleGame</string>
-    <string name="start_game">START GAME</string>
-    <string name="select_test">Select Test</string>
+
+    <string name="ok">OK</string>
+
     <string name="surface_view_example">Surface View Example</string>
-    <string name="ok">ok</string>
-    <string name="splash_screen">Splash Screen</string>
-    <string name="adam_bartkowiak">Adam Bartkowiak\nGames</string>
+
+    <string name="selectModel">select model</string>
+    <string name="selectTest">select test</string>
+    <string name="debugModel">debug model</string>
     <string name="exit">exit</string>
-    <string name="about">about</string>
-    <string name="obj_viewer">OBJ VIEWER</string>
     <string name="filar">filar</string>
     <string name="verticles_data">verticles data</string>
     <string name="gltf_viewer">GLTF Viewer</string>
+    <string name="splashScreen">splash screen</string>
 </resources>

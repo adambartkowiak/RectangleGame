@@ -22,7 +22,7 @@ import javax.microedition.khronos.opengles.GL10
 class GameRenderer(var context: Context) : GLSurfaceView.Renderer {
 
     var models: List<Model>? = null
-    val worldModel = WorldModel()
+    private val worldModel = WorldModel()
 
     var moveInXAxis = 0.0f
 
@@ -41,7 +41,7 @@ class GameRenderer(var context: Context) : GLSurfaceView.Renderer {
     private var startTime: Long = 0
     private val timer = Timer().apply { update() }
     private val camera = Camera(
-        Vec3(0f, 20f*2, 5f*2),
+        Vec3(0f, 8f*2, 15f*2),
         Vec3(0f, 1f, 0f),
         Vec3(0f, 1f, 0f)
     )
@@ -132,7 +132,7 @@ class GameRenderer(var context: Context) : GLSurfaceView.Renderer {
             glDepthFunc(GL_ALWAYS)
         }
 
-//        hudRenderer?.draw()
+        //hudRenderer?.draw()
 
         fpsRenderer?.draw(fpsList.toFloatArray())
 

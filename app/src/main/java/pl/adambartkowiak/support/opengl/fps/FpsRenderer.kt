@@ -1,10 +1,9 @@
 package pl.adambartkowiak.support.opengl.fps
 
-import android.opengl.GLES20
 import android.opengl.GLES20.*
-import android.util.Log
 import pl.adambartkowiak.support.device.Utils
 import pl.adambartkowiak.support.opengl.*
+import pl.adambartkowiak.support.opengl.shader.ShaderHelper
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer

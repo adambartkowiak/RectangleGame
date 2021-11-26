@@ -12,6 +12,7 @@ import pl.adambartkowiak.support.opengl.model.Model
 import pl.adambartkowiak.support.opengl.model.Vec2
 import pl.adambartkowiak.support.opengl.model.Vec3
 import pl.adambartkowiak.support.opengl.model.Vec4
+import pl.adambartkowiak.support.opengl.shader.ShaderHelper
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer
@@ -65,7 +66,7 @@ class GlTFRenderer(
     private val readModelsMax = 20
 
     init {
-        val vertexShader = ShaderHelper.loadShader(GLES20.GL_VERTEX_SHADER, GLTFVertextShader.code)
+        val vertexShader = ShaderHelper.loadShader(GLES20.GL_VERTEX_SHADER, GLTFVertexShader.code)
         val fragmentShader =
             ShaderHelper.loadShader(GLES20.GL_FRAGMENT_SHADER, GLTFFragmentShader.code)
 

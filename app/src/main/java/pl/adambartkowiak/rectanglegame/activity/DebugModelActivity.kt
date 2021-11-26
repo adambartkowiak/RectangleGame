@@ -10,7 +10,7 @@ import pl.adambartkowiak.support.opengl.model.Model
 import pl.adambartkowiak.support.opengl.factory.ModelFactory
 import pl.adambartkowiak.support.opengl.repository.AssetsRepository
 
-class ObjActivity : AppCompatActivity() {
+class DebugModelActivity : AppCompatActivity() {
 
     private var obj: Model? = null
 
@@ -63,7 +63,7 @@ class ObjActivity : AppCompatActivity() {
 
     companion object {
         fun getStartIntent(context: Context): Intent {
-            return Intent(context, ObjActivity::class.java)
+            return Intent(context, DebugModelActivity::class.java)
         }
     }
 }

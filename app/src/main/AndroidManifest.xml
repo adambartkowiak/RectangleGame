@@ -24,10 +24,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.MainMenuActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SelectTestActivity"
+            android:name=".activity.ModelListActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.GameActivity"
@@ -35,7 +35,7 @@
             android:theme="@style/AppThemeFullScreen" />
 
         <activity
-            android:name=".activity.ObjActivity"
+            android:name=".activity.DebugModelActivity"
             android:screenOrientation="portrait" />
     </application>
 

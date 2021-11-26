@@ -6,16 +6,16 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MainMenuActivity">
 
     <Button
-        android:id="@+id/startGameButton"
+        android:id="@+id/selectModelButton"
         style="@style/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_dimen"
         android:padding="@dimen/base_dimen"
-        android:text="@string/start_game" />
+        android:text="@string/selectModel" />
 
     <Button
         android:id="@+id/selectTestButton"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_dimen"
         android:padding="@dimen/base_dimen"
-        android:text="@string/select_test" />
+        android:text="@string/selectTest" />
 
     <Button
         android:id="@+id/objButton"
@@ -33,16 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_dimen"
         android:padding="@dimen/base_dimen"
-        android:text="@string/obj_viewer" />
-
-    <Button
-        android:id="@+id/aboutButton"
-        style="@style/Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/base_dimen"
-        android:padding="@dimen/base_dimen"
-        android:text="@string/about" />
+        android:text="@string/debugModel" />
 
     <Button
         android:id="@+id/exitButton"

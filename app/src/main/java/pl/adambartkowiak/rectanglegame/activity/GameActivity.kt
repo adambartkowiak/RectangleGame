@@ -12,8 +12,8 @@ import pl.adambartkowiak.support.opengl.repository.AssetsRepository
 
 class GameActivity : AppCompatActivity() {
 
-    private val path by lazy { intent.getStringExtra(EXTRA_PATH) }
-    private val fileName by lazy { intent.getStringExtra(EXTRA_FILE_NAME) }
+    private val path by lazy { intent.getStringExtra(EXTRA_MODEL_PATH) }
+    private val fileName by lazy { intent.getStringExtra(EXTRA_MODEL_FILE_NAME) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,13 +37,13 @@ class GameActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val EXTRA_PATH = "EXTRA_PATH"
-        private const val EXTRA_FILE_NAME = "EXTRA_FILE_NAME"
+        private const val EXTRA_MODEL_PATH = "EXTRA_MODEL_PATH"
+        private const val EXTRA_MODEL_FILE_NAME = "EXTRA_MODEL_FILE_NAME"
 
         fun getStartIntent(context: Context, path: String, fileName: String): Intent {
             val intent = Intent(context, GameActivity::class.java)
-            intent.putExtra(EXTRA_PATH, path)
-            intent.putExtra(EXTRA_FILE_NAME, fileName)
+            intent.putExtra(EXTRA_MODEL_PATH, path)
+            intent.putExtra(EXTRA_MODEL_FILE_NAME, fileName)
             return intent
         }
     }
