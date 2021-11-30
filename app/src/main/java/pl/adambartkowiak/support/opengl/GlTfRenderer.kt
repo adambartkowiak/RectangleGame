@@ -33,28 +33,27 @@ const val TEX_COMPONENTS_PER_VERTEX = 2
 const val FLOAT_SIZE_IN_BYTES = 4
 const val INT_SIZE_IN_BYTES = 4
 
-var verticesXYZ = mutableListOf<FloatArray>()
-var normalsXYZ = mutableListOf<FloatArray>()
-var texturesUvXY = mutableListOf<FloatArray>()
-var jointsXYZW = mutableListOf<IntArray>()
-var weightsXYZW = mutableListOf<FloatArray>()
-
-var facesVerticesXYZ = mutableListOf<FloatArray>()
-var facesNormalsXYZ = mutableListOf<FloatArray?>()
-var facesTangentsXYZ = mutableListOf<FloatArray?>()
-var facesTexturesUvXY = mutableListOf<FloatArray?>()
-var facesSkinJointsXYZW = mutableListOf<IntArray?>()
-var facesSkinWeightsXYZW = mutableListOf<FloatArray?>()
-
-var indices = mutableListOf<IntArray>()
-
-var fileNameTextureIDMap = mutableMapOf<String, Int>()
-
-
 class GlTFRenderer(
     private val models: List<Model>?,
     private val bitmapProvider: BitmapProvider
 ) {
+
+    var verticesXYZ = mutableListOf<FloatArray>()
+    var normalsXYZ = mutableListOf<FloatArray>()
+    var texturesUvXY = mutableListOf<FloatArray>()
+    var jointsXYZW = mutableListOf<IntArray>()
+    var weightsXYZW = mutableListOf<FloatArray>()
+
+    var facesVerticesXYZ = mutableListOf<FloatArray>()
+    var facesNormalsXYZ = mutableListOf<FloatArray?>()
+    var facesTangentsXYZ = mutableListOf<FloatArray?>()
+    var facesTexturesUvXY = mutableListOf<FloatArray?>()
+    var facesSkinJointsXYZW = mutableListOf<IntArray?>()
+    var facesSkinWeightsXYZW = mutableListOf<FloatArray?>()
+
+    var indices = mutableListOf<IntArray>()
+
+    var fileNameTextureIDMap = mutableMapOf<String, Int>()
 
     private var program: Int
     private var modelMatrixHandle: Int = 0
@@ -104,7 +103,7 @@ class GlTFRenderer(
             val texturesUV = glTFCreator.createFacesTextureUv(texturesUvXY, index, model)
             val faceIndices = glTFCreator.createFacesIndices(model)
 
-            pl.adambartkowiak.support.opengl.indices.add(faceIndices)
+            indices.add(faceIndices)
 
             //Create Faces
             facesVerticesXYZ.add(verticesXYZ)
